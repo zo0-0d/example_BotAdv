@@ -120,8 +120,8 @@
 .backfire { visibility: hidden }
 
 /* Media */
-@media only screen and (min-width: 415px)
-{
+/* @media only screen and (min-width: 415px) */
+/* { */
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
                    margin-top: -60px }
@@ -135,4 +135,5 @@
   /* comet & inkjet */
   .comet { background-size: 150px 150px  !important; }
   .inkjet { background-size: 140px 140px  !important; }
-}
+
+/* } */
