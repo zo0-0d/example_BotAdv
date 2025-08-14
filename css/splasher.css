@@ -119,8 +119,8 @@
 .backfire { visibility: hidden }
 
 /* Media */
-@media only screen and (min-width: 415px)
-{
+/* @media only screen and (min-width: 415px) */
+/* { */
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
                    margin-top: -60px }
@@ -134,4 +134,5 @@
   /* sheller & bombee */
   .sheller { background-size: 160px 160px  !important; }
   .bombee { background-size: 160px 160px  !important; }
-}
+
+/* } */
