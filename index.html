@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> zo*-*d </title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="header">
+            <p class="title"> WELCOME </p>
+            <!-- Picture -->
+            <p class="picture col-2"> </p>
+            <!-- Navigation -->
+            <ul class="navigation col-11">
+                <li><a href="index.html" class="nav-home">  </a></li>
+                <li><a href="tank.html" class="nav-tank">  </a></li>
+                <li><a href="support.html" class="nav-support">  </a></li>
+                <li><a href="brawler.html" class="nav-brawler"> </a></li>
+                <li><a href="chaser.html" class="nav-chaser">  </a></li>
+                <li><a href="sniper.html" class="nav-sniper">  </a></li>
+                <li><a href="splasher.html" class="nav-splasher">  </a></li>
+                <li><a href="evader.html" class="nav-evader">  </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2> Botworld Adventure </h2>
+            <img src="../logo/image.jpg" width="80%">
+            <p> Botworld Adventure is an open world game. In there you can build your own bot team and create powerful combos. </p>
+            <img src="../logo/image2.png" width="80%">
+            <p> Each bot is unique, they have their own abbilities and ultimate. You can build the bots by finding the botframe first. Then you can upgrade them with materials which you can find on several maps by opening chest, scavenging for scraps, beating wild bots abd bandits, and so on. </p>
+            <img src="../logo/image4.png" width="80%">
+            <p> There are many modes that you can play, including offline Adventure, online Arena and Guild Events, etc. </p>
+
+            <div class="get">
+                <a href="https://play.google.com/store/apps/details?id=com.featherweightgames.fx&hl=en-US"><p class="playstore"></p> </a>
+                <a href="https://apps.apple.com/au/app/botworld-adventure/id1456063997"><p class="appstore"></p></a>
+            </div>
+        </div>
+
+        <form class="contact" id="contact">
+            <h3 align="center"> If you have any questions about the game <br><br> feel free to contact us </h3>
+            <!-- subject (title) -->
+            <input type="hidden" name="title" value="Botworld Adventure Question">
+            <!-- email -->
+            <div class="form-group email-input">
+                <label for="data=email"> Email </label>
+                <input type="email" id="data-email" name="email" placeholder=" Enter Your Email">
+            </div>
+            <!-- name -->
+            <div class="form-group name-input">
+                <!-- label digunakan agar saat diklik maka langsung bisa mengisi bagian input -->
+                <label for="data-nama"> Name </label>
+                <input type="text" id="data-nama" name="name" placeholder="Enter Your Name" >
+            </div>
+            <!-- message -->
+            <div class="form-group">
+                <label for="data-tanya"> Question <br> </label>
+                <textarea name="message" id="data-tanya" placeholder="Enter Your Question"></textarea>
+               <div class="kirim">
+            <!-- submit -->
+                <button type="submit" class="btn" align="center"> Submit </button>
+               </div>
+            </div>
+        </form>
+
+         <!-- JS -->
+            <!-- CDN emailjs -->
+            <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+
+                // Inisialisasi EmailJS dengan Public Key
+                emailjs.init("M7X9X7LbmfgOXF0PI")
+
+                // Ambil elemen form
+                const form= document.getElementById("contact")
+
+                // Saat form disubmit
+                form.addEventListener
+                ("submit", function(e)
+                { e.preventDefault();
+                // Mencegah reload halaman default form
+
+                    // Kirim data EmailJS
+                    emailjs.sendForm(
+                        // Service ID
+                        "service_ls7pgzj" ,
+                        // Template ID
+                        "template_i2wcard" ,
+                        // Data form yang dikirim
+                        this
+                    )
+                    
+                    // Setelah megirim 
+                    .then(function() {
+                        alert("Pesan berhasil dikirim");
+                        form.reset(); },
+                        // Kosongkan form setelah terkirim
+                        function(error) {
+                            alert("Gagal mengirim pesan: " + JSON.stringfy(error));
+                        });
+                        
+                });
+                
+            </script>
+        
+        <div class="footer">
+            <p> Botworld Adventure </p>
+            <marquee> Embark on an amazing adventure and enjoy the thrill of bot battle </marquee>
+        </div>
+
+    </body>
+</html>

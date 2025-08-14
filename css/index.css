@@ -1,0 +1,117 @@
+/* Konten */
+.content { /* font */
+           font-size: 14px;
+           text-align: center;
+           /* ukuran */
+           width: 80%;
+           /* box */
+           margin: 180px auto 50px auto
+         }
+
+/* paragraf */
+.content p { text-align: justify }
+
+/* download */
+.content .get .playstore { /* background */ 
+                           background-image: url(../logo/play-store.png);
+                           /* ukuran */
+                           width:120px; height: 40px;
+                           background-size: cover;
+                           margin: 10px auto;
+                         }
+.content .get .appstore { /* background */ 
+                          background-image: url(../logo/apple.png);
+                          /* ukuran */
+                          width:108px; height: 33px;
+                          background-size: cover;
+                          margin: 10px auto;
+                        }
+
+/* Contact */
+.contact { /* display */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* background */
+        background-color: var(--primary-color);
+        /* box */
+        padding: 5px 0 10px 0;
+        margin: 0 auto 80px auto;
+        border: 2px dashed;
+        border-radius: 10px;
+        /* ukuran */
+        width: 95%
+      }
+  /* teks */
+  .contact h3 { /* font */
+                font-family: 'Audiowide';
+                font-size: 12px;
+                letter-spacing: 1px;
+                /* background */
+                background-color: var(--secondary-color);
+                /* box */
+                padding: 10px;
+                border: 3px dotted var(--tertiary-color);
+                border-radius: 10px;
+                margin-top: 10px;
+              }
+  /* input */
+  .form-group { /* font & text */
+                font-family: monospace;
+                text-align: center;
+                /* background */
+                background-color: var(--secondary-color);
+                /* box */
+                padding: 5px;
+                margin: 5px auto;
+                border: 2px dotted var(--tertiary-color);
+                border-radius: 5px;
+                /* ukuran */
+                width: 300px
+              }
+  /* label */
+  label { /* font */
+          font-family: 'Audiowide';
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+  /* input field */
+  input { /* ukuran */
+           width: 200px;
+          /* box */
+          padding: 5px;
+          border: 1px dotted var(--tertiary-color);
+          border-radius: 5px;
+        }
+  /* textarea */
+  textarea { /* ukuran */
+           width: 250px;
+           height: 100px;
+          /* box */
+          padding: 5px;
+          border: 1px dotted var(--tertiary-color);
+          border-radius: 10px;
+        }
+  /* botton submit */
+  .btn { /* text & font */
+         font-family: "Press Start 2P";
+         font-size: 8px;
+         text-align: center;
+         /* background */
+         background-color: darkgray;
+         /* box */
+         padding: 5px;
+         border: 1px solid;
+         border-radius: 5px;
+         /* ukuran */
+         width: 100px
+       }
+  .btn:hover { background-color: gray }
+  .btn:active { background-color: black; color: white; }
+
+/* Media */
+@media only screen and (min-width: 415px)
+{
+  /* contact */
+  .contact { width: 50% }
+}

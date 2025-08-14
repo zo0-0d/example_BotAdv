@@ -1,0 +1,152 @@
+* { /* Font */
+    font-family: monospace;
+  }
+
+/* Pembagian 12 Kolom */
+   .col-1 { width: 8.33% }
+   .col-2 { width: 16.66%  }
+   .col-3 { width: 25%  }
+   .col-4 { width: 33.33%  }
+   .col-5 { width: 41.66%  }
+   .col-6 { width: 50%  }
+   .col-7 { width: 58.33%  }
+   .col-8 { width: 66.66%  }
+   .col-9 { width: 75%  }
+   .col-10 { width: 83.33%  }
+   .col-11 { width: 91.66%  }
+   .col-12 { width: 100%  }
+
+/* warna */
+:root { --primary-color: rgb(196, 212, 214) ;
+        --secondary-color: rgb(89, 203, 223) ;
+        --tertiary-color: rgb(50, 51, 68) ;
+        --quaternary-color: rgb(42, 164, 180) ;
+        --quinary-color: rgb(50, 53, 61) ;
+      }
+/* Style Header */
+.header { /* posisi */
+          position: fixed; top: 0px; left: 0px;
+          /* background */
+          background-color: var(--primary-color);
+          /* box */
+          padding-bottom: 5px;
+          border: 2.5px groove var(--tertiary-color);
+          border-radius: 10px;
+          /* z-index */
+          z-index: 2
+        }
+
+    /* welcome */
+    .header .title { /* font */
+                       font-family: 'Press Start 2P'; 
+                       font-size: 12px;
+                       letter-spacing: 3px;
+                       text-align: center;
+                       /* box */
+                       background-color: var(--secondary-color);
+                       padding: 4px 10px ;
+                       border: 2px groove cyan;
+                       border-bottom-left-radius: 20px;
+                       border-bottom-right-radius: 20px;
+                       margin: 0 auto;
+                       /* ukuran */
+                       width: 45% }
+    /* gambar header */
+    .header .picture { /* ukuran wadah picture */
+                       width: 80.0625px; height: 45.0625px;
+                       /* picture botworld */
+                       background-image: url(../logo/picture.png);
+                       /* picture mencover ukuran <p> */
+                       background-size: cover;
+                       /* box */
+                       margin: 10% 5%;
+                       /* posisi picture */
+                       float: left
+                     }
+
+    /* item navigasi */
+    .header .navigation li { /* display */
+                             display:grid;
+                             /* posisi */
+                             margin: 7.5px;
+                             float: left
+                           }
+    .header .navigation li a { /* text, font, posisi */
+                               text-decoration: none;
+                               font-family: sans-serif; font-weight: bold; font-size: xx-small;
+                               color: white;
+                               /* ukuran */
+                               width: 40px; height: 25px;
+                               /* box */
+                               padding: 5px;
+                               margin: 10px;
+                               border: 2px  solid cyan; border-radius: 5px;
+                               margin: 0px auto;
+                               box-shadow: 0 0 3px blue; box-shadow: 0 0 7px blue;
+                               /* background */
+                               background-color: var(--secondary-color);
+                               background-size: contain;
+                               background-repeat: no-repeat;
+                               background-blend-mode: luminosity;
+                               background-position: bottom;
+                             }
+    .header .navigation li a:hover { background-color: rgb(42, 164, 180) }
+    .header .navigation li a:active { background-color: rgb(24, 127, 141) }
+    
+    /* logo navigasi */
+    .nav-home { background-image: url(../logo/home.png); 
+                background-color: unset !important; 
+                border: 0px !important;
+                box-shadow: unset !important;
+                /* agar style yg berjalan yg ini */
+              }
+    .nav-home:active { background-size: 60% !important ;}
+    .nav-tank { background-image: url(../logo/tank.png) }
+    .nav-support { background-image: url(../logo/support.png) }
+    .nav-brawler { background-image: url(../logo/brawler.png) }
+    .nav-chaser { background-image: url(../logo/chaser.png) }
+    .nav-sniper { background-image: url(../logo/sniper.png) }
+    .nav-splasher { background-image: url(../logo/splasher.png) }
+    .nav-evader { background-image: url(../logo/evader.png) }
+
+/* Style Footer */
+    /* tulisan botworld */
+    .footer p { /* font */
+                font-family: 'Press Start 2P'; 
+                font-size: 10px;
+                /* box */
+                background-color: var(--secondary-color);
+                padding: 4px 10px ;
+                border: 2px groove cyan;
+                border-top-right-radius: 20px;
+                margin: 10px 0 0 0;
+                /* ukuran */
+                width: 45%;
+                /* posisi */
+                position: fixed;
+                bottom: 15px;
+                left: 0px
+              }
+    /* tulisan berjalan */
+    .footer marquee { /* font */
+                      font-family: 'Audiowide' ;
+                      font-size: 11px;
+                      position: fixed;
+                      bottom: 0px;
+                      left: 0px;
+                      /* box */
+                      background-color: var(--primary-color);
+                      border-top: 1px solid;
+                      border-bottom: 1px solid;
+                    }
+
+/* Media */
+@media only screen and (min-width: 415px)
+{
+  /* header */
+  .header { width: 100%; height: 100px }
+  .header .picture { margin-top: 5px;}
+  .header .navigation li { margin-left: 44px }
+  /* footer */
+  .footer p { width: 20%}
+}

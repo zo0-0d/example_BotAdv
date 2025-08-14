@@ -1,0 +1,138 @@
+/* Content */
+.content { /* posisi */
+           float: left
+         }
+
+    /* Logo */
+    .content .logo { /* posisi */
+                     position: fixed;
+                     top: 180px;
+                     left: 0px;
+                     text-align: center;
+                     /* ukuran */
+                     height: 70%; 
+                     /* box */
+                     background-color: var(--primary-color);
+                     padding: 10px;
+                     border: 2px groove var(--tertiary-color);
+                     border-radius: 20px;
+                     margin: 10px;
+                     margin-left: 0px;
+                   }
+    .content .logo .sign { /*background */
+                           background-image: url(../logo/evader.png);
+                           background-size: cover;
+                           background-color: var(--secondary-color);
+                           background-blend-mode: luminosity;
+                           /* ukuran */
+                           width: 95%; height: 10%;
+                           /* box */
+                           margin: 20px auto 50px;
+                           border: 2.5px groove var(--quaternary-color);
+                           border-radius: 20px;
+                         }
+    .content .logo .letter { /*text & font */
+                             font-family: 'Press Start 2P';
+                             font-size: 30px;
+                             color: var(--quinary-color);
+                             margin-bottom: 55px;
+                             text-shadow: -2px -3px var(--quinary-color), 1.5px -0.6px white, 3px 1px var(--quinary-color)
+                           }
+
+/* daftar bot */
+.bot-show { /* posisi */
+            margin: 190px auto 70px 35%;
+          }
+
+    /* bot rarity */
+    .rarity { /* text & font */
+              text-align: center;
+              font-family: 'Audiowide';
+              letter-spacing: 2px;
+              color: white;
+              font-size: 16px;
+              /* box */
+              padding: 2.5px;
+              border: 2px groove var(--tertiary-color);
+              border-radius: 10px;
+            }
+    .legendary { background-color: rgb(233, 200, 13) }
+    .epic { background-color: rgb(190, 38, 190) }
+    .rare { background-color: rgb(209, 41, 41) }
+    .special { background-color: rgb(0, 255, 170) }
+    .common { background-color: var(--primary-color) }
+
+    /* bot name */
+    td p .name { /* text & font */
+                 font-family: 'Press Start 2P';
+                 font-size: 10px;
+                 font-weight: bold;
+                 /* visibility  */
+                 visibility: hidden;
+               }
+
+    .comet { background-image: url(../bot/evader/comet.png);  background-size: 70px 80px !important; }
+    .inkjet { background-image: url(../bot/evader/inkjet.png);  background-size: 70px 80px !important; }
+    .hornet { background-image: url(../bot/evader/hornet.png) }
+    .froggy { background-image: url(../bot/evader/froggy.png) }
+    .frosty { background-image: url(../bot/evader/frosty.png) }
+    .dune-bug { background-image: url(../bot/evader/dune-bug.png) }
+    .flamer { background-image: url(../bot/evader/flamer.png) }
+    .icicool { background-image: url(../bot/evader/icicool.png) }
+
+    /* bot image */
+    td .bot { /* ukuran */
+           width: 90px; height: 114px;
+           /* background */
+           background-size: contain;
+           background-repeat: no-repeat;
+           background-position: center;
+           /* box */
+           margin: 2px;
+           border-radius: 10px;
+           /* text & font */
+           text-align: center;
+         }
+    /* ketika di-hover muncul nama */
+    td .bot:hover { /* background */
+                    background-image: none;
+                    border: 2px groove var(--tertiary-color);
+                    /* ukuran */
+                    width: 86px; height: 110px;
+                  }
+        /* warna setiap rarity */
+        .st1:hover { background-color: rgba(233, 200, 13, 0.8);}
+        .nd2:hover { background-color: rgba(190, 38, 190, 0.8);}
+        .rd3:hover { background-color: rgb(209, 41, 41, 0.8);}
+        .th4:hover { background-color: rgb(0, 255, 170, 0.8);;}
+        .th5:hover { background-color:var(--primary-color)}
+        /* nama */
+        td p:hover .name { visibility: visible }
+
+    /* deskripsi */
+    .description { /* text & font */
+                   font-family: 'Audiowide'; 
+                   font-size: 15px;   
+                   visibility: hidden;   
+                 }
+                 
+/* agar tabel tak jadi ke kiri / tetap rapi 3 kolom */
+.backfire { visibility: hidden }
+
+/* Media */
+@media only screen and (min-width: 415px)
+{
+  /* tulisan */ 
+  .content .logo { width: 8%; height: 440px;
+                   margin-top: -60px }
+  .content .logo .sign { margin: 5px auto ; height: 100px}
+  .content .logo .letter { margin-bottom: 10px; font-size: 26px }
+  /* daftar bot */
+  .bot-show { margin-left: 180px; margin-top: 150px; }
+  td .bot { width: 300px; height: 180px }
+  td .bot:hover { width: 296px; height: 176px;}
+  td .bot:hover .description { visibility: visible }
+  /* comet & inkjet */
+  .comet { background-size: 150px 150px  !important; }
+  .inkjet { background-size: 140px 140px  !important; }
+}
