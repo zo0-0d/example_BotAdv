@@ -121,9 +121,9 @@
 /* agar tabel tak jadi ke kiri / tetap rapi 3 kolom */
 .backfire { visibility: hidden }
 
-/* Media 
-@media only screen and (min-width: 415px)
-{ */
+/* Media */
+/* @media only screen and (min-width: 415px) */
+/* {  */
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
                    margin-top: -60px }
@@ -140,3 +140,4 @@
   td .bot:hover .description { visibility: visible }
 
 /* } */
+
