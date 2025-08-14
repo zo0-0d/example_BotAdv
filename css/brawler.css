@@ -121,9 +121,9 @@
 /* agar tabel tak jadi ke kiri / tetap rapi 3 kolom */
 .backfire { visibility: hidden }
 
-/* Media */
+/* Media 
 @media only screen and (min-width: 415px)
-{
+{ */
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
                    margin-top: -60px }
@@ -138,4 +138,5 @@
   .nibble { background-size: 340px 170px !important; }
   .scatter { background-size: 170px 170px !important; }
   td .bot:hover .description { visibility: visible }
-}
+
+/* } */
