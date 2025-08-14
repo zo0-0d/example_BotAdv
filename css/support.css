@@ -115,8 +115,8 @@
                  }
                  
 /* Media */
-@media only screen and (min-width: 415px)
-{
+/* @media only screen and (min-width: 415px) */
+/* { */
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
                    margin-top: -60px }
@@ -129,4 +129,5 @@
   td .bot:hover .description { visibility: visible }
   /* bouncer */
   .bouncer { background-size: 220px 220px !important; }
-}
+
+/* } */
