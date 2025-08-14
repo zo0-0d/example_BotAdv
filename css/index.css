@@ -109,9 +109,3 @@
   .btn:hover { background-color: gray }
   .btn:active { background-color: black; color: white; }
 
-/* Media */
-@media only screen and (min-width: 415px)
-{
-  /* contact */
-  .contact { width: 50% }
-}
