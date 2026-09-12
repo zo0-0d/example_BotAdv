@@ -10,7 +10,7 @@
                      left: 0px;
                      text-align: center;
                      /* ukuran */
-                     height: 70%; 
+                     height: 70shv; 
                      /* box */
                      background-color: var(--primary-color);
                      padding: 10px;
