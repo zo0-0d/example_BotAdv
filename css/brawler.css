@@ -96,7 +96,7 @@
            text-align: center;
          }
     /* ketika di-hover muncul nama */
-    td bot:hover { /* background */
+    td .bot:hover { /* background */
                     background-image: none;
                     border: 2px groove var(--tertiary-color);
                     /* ukuran */
