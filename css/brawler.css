@@ -1,7 +1,6 @@
 /* Content */
 .content { /* posisi */
-           float: left;
-           overflow:hidden;
+           float: left
          }
 
     /* Logo */
@@ -11,7 +10,7 @@
                      left: 0px;
                      text-align: center;
                      /* ukuran */
-                     height: 70%; 
+                     height: 70lvh; 
                      /* box */
                      background-color: var(--primary-color);
                      padding: 10px;
