@@ -96,7 +96,7 @@
            text-align: center;
          }
     /* ketika di-hover muncul nama */
-    td bot:active { /* background */
+    td bot:hover { /* background */
                     background-image: none;
                     border: 2px groove var(--tertiary-color);
                     /* ukuran */
@@ -109,7 +109,7 @@
         .th4:hover { background-color: rgb(0, 255, 170, 0.8);}
         .th5:hover { background-color: var(--primary-color);}
         /* nama */
-        td p:active .name { visibility: visible }
+        td p:hover .name { visibility: visible }
 
     /* deskripsi */
     .description { /* text & font */
