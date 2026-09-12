@@ -10,7 +10,7 @@
                      left: 0px;
                      text-align: center;
                      /* ukuran */
-                     height: 70%; 
+                     height: 70lvh; 
                      /* box */
                      background-color: var(--primary-color);
                      padding: 10px;
@@ -113,4 +113,20 @@
                    font-size: 15px;   
                    visibility: hidden;   
                  }
-                 
+
+ /* Media */
+@media only screen and (min-width: 768px)
+{
+  /* tulisan */ 
+  .content .logo { width: 8%; height: 440px;
+                   margin-top: -60px }
+  .content .logo .sign { margin: 5px auto ; height: 100px}
+  .content .logo .letter { margin-bottom: 10px; font-size: 22px }
+  /* daftar bot */
+  .bot-show { margin-left: 180px; margin-top: 150px; }
+  td .bot { width: 300px; height: 180px }
+  td .bot:hover { width: 296px; height: 176px;}
+  td .bot:hover .description { visibility: visible }
+  /* bouncer */
+  .bouncer { background-size: 220px 220px !important; }
+}                
