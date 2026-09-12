@@ -114,4 +114,5 @@
 {
   /* contact */
   .contact { width: 50% }
+  .content { min-width: 900px }
 }
