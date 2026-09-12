@@ -1,6 +1,7 @@
 /* Content */
 .content { /* posisi */
-           float: left
+           float: left;
+           overflow:hidden;
          }
 
     /* Logo */
