@@ -1,6 +1,7 @@
 /* Content */
 .content { /* posisi */
-           float: left
+           float: left:
+           overflow: hidden:
          }
 
     /* Logo */
@@ -115,7 +116,7 @@
                  }
                  
 /* Media */
-@media only screen and (min-width: 415px)
+@media only screen and (min-width: 768px)
 {
   /* tulisan */ 
   .content .logo { width: 8%; height: 440px;
