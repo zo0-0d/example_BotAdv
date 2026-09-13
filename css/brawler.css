@@ -64,7 +64,8 @@
 
     /* bot name */
     td p .name { /* text & font */
-                 padding: -10px 0 0 0;
+                 position: relative;
+                 top: -5px;
                  font-family: 'Press Start 2P';
                  font-size: 5px;
                  font-weight: bold;
