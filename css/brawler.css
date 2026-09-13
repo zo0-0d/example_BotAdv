@@ -65,7 +65,7 @@
     /* bot name */
     td p .name { /* text & font */
                  font-family: 'Press Start 2P';
-                 font-size: 10px;
+                 font-size: 5px;
                  font-weight: bold;
                  /* visibility  */
                  visibility: hidden;
@@ -109,12 +109,13 @@
         .th4:hover { background-color: rgb(0, 255, 170, 0.8);}
         .th5:hover { background-color: var(--primary-color);}
         /* nama */
+        td p:hover .name { visibility: visible }
         td p:hover .description { visibility: visible }
 
     /* deskripsi */
     .description { /* text & font */
                    font-family: 'Audiowide'; 
-                   font-size: 3px;   
+                   font-size: 5px;   
                    visibility: hidden;   
                  }
 
